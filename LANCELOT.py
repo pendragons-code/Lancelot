@@ -1,7 +1,14 @@
 from pynput.keyboard import Listener  as KeyboardListener
 from pynput.keyboard import Key
 from pynput.mouse    import Listener  as MouseListener
-
+print("""
+.____       _____    _______  _________ ___________.____    ___________________
+|    |     /  _  \   \      \ \_   ___ \\_   _____/|    |   \_____  \__    ___/
+|    |    /  /_\  \  /   |   \/    \  \/ |    __)_ |    |    /   |   \|    |   
+|    |___/    |    \/    |    \     \____|        \|    |___/    |    \    |   
+|_______ \____|__  /\____|__  /\______  /_______  /|_______ \_______  /____|   
+        \/       \/         \/        \/        \/         \/       \/         
+""")
 def writetofile(x,y):
     with open('.log.txt', 'a') as file:
         file.write('position of mouse: {0}\n'.format((x,y)))
